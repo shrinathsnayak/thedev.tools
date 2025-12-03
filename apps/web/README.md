@@ -112,6 +112,7 @@ Tools are organized into the following categories:
 
 ### Workspace Packages
 
+- `@workspace/ui` - shadcn/ui component library
 - `@workspace/utilities` - Core utility functions
 - `@workspace/constants` - Shared constants
 - `@workspace/types` - TypeScript types
@@ -121,7 +122,7 @@ Tools are organized into the following categories:
 - `next` - Next.js framework
 - `react` & `react-dom` - React library
 - `fuse.js` - Fuzzy search
-- `@tabler/icons-react` - Icons
+- `lucide-react` - Icon library
 - `next-themes` - Theme management
 - `tailwindcss` - CSS framework
 

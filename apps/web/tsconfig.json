@@ -5,6 +5,8 @@
     "paths": {
       "@/*": ["./*"],
       "@workspace/constants/*": ["../../packages/constants/src/*"],
+      "@workspace/ui": ["../../packages/ui/src/index.ts"],
+      "@workspace/ui/*": ["../../packages/ui/src/*"],
       "@workspace/utilities/*": ["../../packages/utilities/src/*"],
       "@workspace/types/*": ["../../packages/types/src/*"]
     },

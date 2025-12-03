@@ -1,6 +1,6 @@
 # thedev.tools
 
-> A comprehensive collection of developer tools and utilities for web development. All tools run client-side in your browser - no backend required.
+> 100+ developer tools that respect your privacy. Everything runs in your browser - your data never leaves your device.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue.svg)](https://www.typescriptlang.org/)
@@ -9,7 +9,7 @@
 
 ## 🚀 Overview
 
-thedev.tools is a modern, open-source platform providing 100+ developer tools and utilities. Built with Next.js, TypeScript, and a monorepo architecture, it offers everything from code formatters to SEO generators, all running entirely in your browser.
+thedev.tools is a modern, open-source platform providing 100+ developer tools and utilities built for developers. Built with Next.js, TypeScript, and a monorepo architecture, it offers everything from code formatters to SEO generators. All tools run entirely in your browser - your data never leaves your device, ensuring complete privacy and security.
 
 ## ✨ Features
 
@@ -102,7 +102,8 @@ thedev.tools/
 ├── apps/
 │   └── web/              # Next.js web application
 ├── packages/
-│   ├── formatters/       # Core utility functions
+│   ├── ui/               # shadcn/ui component library
+│   ├── utilities/        # Core utility functions
 │   ├── constants/        # Shared constants
 │   ├── types/            # Shared TypeScript types
 │   ├── typescript-config/ # Shared TypeScript configs
@@ -154,7 +155,19 @@ pnpm --filter @workspace/formatters lint
 
 ## 📦 Packages
 
-### `@workspace/formatters`
+### `@workspace/ui`
+
+shadcn/ui component library with all components pre-configured.
+
+**Key Features:**
+
+- 54+ shadcn/ui components
+- Pre-configured Tailwind CSS setup
+- TypeScript support
+- Dark mode support
+- Accessible components built on Radix UI
+
+### `@workspace/utilities`
 
 Core utility functions for all developer tools. All functions are pure and run client-side.
 
@@ -165,7 +178,7 @@ Core utility functions for all developer tools. All functions are pure and run c
 - Fully typed with TypeScript
 - Tree-shakeable exports
 
-[📖 Read the Formatters README](./packages/formatters/README.md)
+[📖 Read the Utilities README](./packages/utilities/README.md)
 
 ### `@workspace/constants`
 
@@ -228,7 +241,7 @@ Shared ESLint configurations for code quality and consistency.
 ### Adding a New Tool
 
 1. Add the tool definition to `apps/web/lib/tools/tools.ts`
-2. Create the tool implementation in `packages/formatters/src/`
+2. Create the tool implementation in `packages/utilities/src/`
 3. Create the UI page in `apps/web/app/tools/`
 4. Update relevant constants/types if needed
 
@@ -243,7 +256,7 @@ apps/web/
 │   └── tools/            # Tool definitions and utilities
 └── constants/            # App-specific constants
 
-packages/formatters/
+packages/utilities/
 ├── src/
 │   ├── accessibility/    # Accessibility tools
 │   ├── backend/          # Backend utilities
@@ -256,6 +269,12 @@ packages/formatters/
 │   ├── security/         # Security tools
 │   ├── seo/              # SEO tools
 │   └── utilities/        # General utilities
+
+packages/ui/
+├── src/
+│   ├── components/       # shadcn/ui components
+│   ├── lib/              # Utility functions
+│   └── styles.css        # Base shadcn styles
 ```
 
 ## 🤝 Contributing
@@ -284,7 +303,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Built with [Next.js](https://nextjs.org/)
 - Powered by [Turborepo](https://turbo.build/)
-- Icons from [Tabler Icons](https://tabler.io/icons)
+- Icons from [Lucide](https://lucide.dev)
 
 ## 📧 Contact
 
