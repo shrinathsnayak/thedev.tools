@@ -15,12 +15,12 @@
   },
   "dependencies": {
     "@workspace/constants": "workspace:*",
+    "@workspace/types": "workspace:*",
     "@workspace/ui": "workspace:*",
     "@workspace/utilities": "workspace:*",
-    "@workspace/types": "workspace:*",
     "fuse.js": "^7.1.0",
     "lucide-react": "^0.468.0",
-    "next": "^15.4.5",
+    "next": "^16.0.7",
     "next-themes": "^0.4.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
@@ -32,6 +32,7 @@
     "@types/react-dom": "^19.1.7",
     "@workspace/eslint-config": "workspace:^",
     "@workspace/typescript-config": "workspace:*",
+    "babel-plugin-react-compiler": "^1.0.0",
     "typescript": "^5.9.2"
   }
 }
